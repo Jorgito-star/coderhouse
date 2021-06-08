@@ -1,0 +1,21 @@
+$col: #E81D1D;
+$col1:#275837;
+$bc: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,59,77,1) 27%, rgba(58,49,49,1) 67%);
+
+
+
+footer{
+	background: $bc
+}
+
+header{
+	background: $bc
+}
+
+h1{
+	color:$col
+}
+
+h2{
+	color:$col1
+}

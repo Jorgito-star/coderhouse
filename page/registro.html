@@ -1,0 +1,266 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- TITULO -->
+	<title>
+		Viajes por el mundo
+	</title>
+
+	<!-- DESCRIPTION & KEYWORDS -->
+	<meta name="keywords" content="viajes,turismo,hotel,paquetes,destinos">
+	<meta name="description" content="Los mejores viajes,hacelo realidad">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<!-- FONTAWESOME & TAILWIND -->
+	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+	<!-- BOOTSTRAP & CUSTOM CSS -->
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/sass.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+
+
+<!--Inicio-->
+<body>
+	<header>
+		<!--Menu-->
+		<nav id="header" class="bg-black text-white w-full z-20 top-0">
+			<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+				<div class="block lg:hidden pl-8 p-2">
+					<a class="text-yellow-300 font-bold text-base no-underline hover:no-underline " href="#">
+						Viajes con estilo
+					</a>
+				</div>
+				<div class="block lg:hidden pr-4">
+					<button id="nav-toggle" class="flex items-center px-3 py-2 text-yellow-300 border-gray-600 focus:outline-none">
+		          		<svg fill="text-yellow-300" viewBox="0 0 20 20" class="w-6 h-6 fill-current">
+		            		<title>Viajes con estilo</title>
+		            		<path fill-rule="evenodd"
+		              		d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+		              		clip-rule="evenodd">	
+		              		</path>
+		          		</svg>
+		        	</button>
+				</div>
+				<div class="w-full flex-grow p-4 lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-black md:bg-transparent z-20"
+					id="nav-content">
+					<ul class="list-reset lg:flex justify-center flex-1 items-center">
+			            <li class="mr-3">
+			              <a class="border-b-0 md:border-b-4 border-yellow-500 inline-block py-2 px-4 text-yellow-500 font-bold ancla prueba22" href="../index.html"><i class="fas fa-home"></i></a>
+			            </li>
+			            <li class="mr-3">
+			              <a class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4 ancla prueba22" href="../index.html#dest"><i class="fas fa-plane"></i></a>
+			            </li>
+			            <li class="mr-3">
+			              <a class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4 ancla prueba22" href="login.html"><i class="fas fa-user"></i></a>
+			            </li>
+			            <li class="mr-3">
+			            <a class="inline-block hover:text-yellow-300 hover:text-underline py-2 px-4 ancla prueba22" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+			<script>
+			var h = document.documentElement,
+		    b = document.body,
+		    st = 'scrollTop',
+		    sh = 'scrollHeight',
+		    progress = document.querySelector('#progress'),
+		    scroll;
+		var scrollpos = window.scrollY;
+		var header = document.getElementById("header");
+		var navcontent = document.getElementById("nav-content");
+
+		document.addEventListener('scroll', function () { 
+		    scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+		    progress.style.setProperty('--scroll', scroll + '%');
+		    scrollpos = window.scrollY;
+
+		    if (scrollpos > 10) {
+		        header.classList.add("bg-black");
+		        navcontent.classList.remove("bg-black");
+		        navcontent.classList.add("bg-black");
+		    } else {
+		        header.classList.remove("bg-black");
+		        navcontent.classList.remove("bg-black");
+		        navcontent.classList.add("bg-black");
+
+		    }
+
+		});
+
+		document.getElementById('nav-toggle').onclick = function () {
+		    document.getElementById("nav-content").classList.toggle("hidden");
+		}
+		</script>
+
+	</header>
+
+	<!--Sección contenedora de formulario de registro-->
+	<main class="font-mono bg-black">
+		<!-- Contenedor -->
+		<div class="container mx-auto">
+			<div class="flex justify-between">
+				<!-- Row -->
+				<div class="w-full xl-full lg-full flex">
+					<!-- Col -->
+					<div
+						class="w-full h-auto bg-gray-400  hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
+						style="background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800')"
+					></div>
+					<!-- Col -->
+					<div class="w-full lg:w-7/12 bg-black p-5 rounded-lg lg:rounded-l-none">
+						<h1 class="pt-4 text-2xl text-yellow-500 text-center">Crear una Cuenta!</h1>
+						<form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+							<div class="mb-4 md:flex md:justify-between">
+								<div class="mb-4 md:mr-2 md:mb-0">
+									<label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+										Nombre
+									</label>
+									<input
+										class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+										id="firstName"
+										type="text"
+										placeholder="Nombre Completo"
+									/>
+								</div>
+								<div class="md:ml-2">
+									<label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+										Apellido
+									</label>
+									<input
+										class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+										id="lastName"
+										type="text"
+										placeholder="Apellido"
+									/>
+								</div>
+							</div>
+							<div class="mb-4">
+								<label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+									Correo Electrónico
+								</label>
+								<input
+									class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+									id="email"
+									type="email"
+									placeholder="Correo Electrónico"
+								/>
+							</div>
+							<div class="mb-4 md:flex md:justify-between">
+								<div class="mb-4 md:mr-2 md:mb-0">
+									<label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+										Contraseña
+									</label>
+									<input
+										class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+										id="password"
+										type="password"
+										placeholder="******************"
+									/>
+									<p class="text-xs italic text-red-500">Generar contraseña.</p>
+								</div>
+								<div class="md:ml-2">
+									<label class="block mb-2 text-sm font-bold text-gray-700" for="c_password">
+										Confirmar contraseña
+									</label>
+									<input
+										class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+										id="c_password"
+										type="password"
+										placeholder="******************"
+									/>
+								</div>
+							</div>
+							<div class="mb-6 text-center">
+								<button
+									class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+									type="button"
+								>
+									Registrar Cuenta
+								</button>
+							</div>
+							<hr class="mb-6 border-t" />
+							<div class="text-center">
+								<a
+									class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+									href="#"
+								>
+									Olvido su contraseña?
+								</a>
+							</div>
+							<div class="text-center">
+								<a
+									class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+									href="login.html"
+								>
+									Ya tenes cuenta? Accede!
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<!-- Footer contiene seccion de empleos, contactos, contiene, disclaimer y logos -->
+	<footer>
+		<nav class="footer__navigator navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="navigator__menu me-auto">
+					<ul class="navbar-nav">
+						<li class="menu__item nav-item">
+							<a href="../index.html" class="nav-link ancla">Home</a>
+						</li>
+						<li class="menu__item nav-item">
+							<a href="https://www.argentina.gob.ar/aaip/datospersonales" class="nav-link ancla">PDP</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="disclaimer color">
+					<small>Disclaimer: All images are for illustrative.</small>
+				</div>
+
+				<div class="footer__social ms-auto">
+					<ul class="navbar-nav">
+						<li class="social__item nav-item">
+							<a style="font-size: 23px" href="https://www.facebook.com" class="nav-link">
+								<i class="fab fa-facebook color"></i>
+							</a>
+						</li>
+						<li class="social__item nav-item">
+							<a style="font-size: 23px" href="https://www.instagram.com" class="nav-link">
+								<i class="fab fa-instagram  color"></i>
+							</a>
+						</li>
+						<li class="social__item nav-item">
+							<a style="font-size: 23px" href="https://www.twitter.com" class="nav-link">
+								<i class="fab fa-twitter color"></i>
+							</a>
+						</li>
+						<li class="social__item nav-item">
+							<a style="font-size: 23px" href="https://www.linkedin.com" class="nav-link">
+								<i class="fab fa-linkedin color"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+		</nav>		
+	</footer>
+
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
